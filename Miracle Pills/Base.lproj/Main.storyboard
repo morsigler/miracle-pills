@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Miracle_Pills" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="RBr-qa-SyF">
+                                <rect key="frame" x="135" y="42" width="105" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="mLa-6o-MUV"/>
+                                    <constraint firstAttribute="width" constant="105" id="v1V-o6-xx6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miracle Pills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc5-t1-3iN">
+                                <rect key="frame" x="111" y="165" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="D6C-gk-xOi"/>
+                                    <constraint firstAttribute="height" constant="35" id="Vu1-hv-KIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.084973353044740088" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-FP-no5">
+                                <rect key="frame" x="168" y="208" width="39" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="1nc-MS-aho"/>
+                                    <constraint firstAttribute="width" constant="39" id="oXC-fO-5m9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.084973353040000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siS-Cc-IKK" userLabel="Divider">
+                                <rect key="frame" x="36" y="239" width="303" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3g0-7C-WlU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-LM-HZ3">
+                                <rect key="frame" x="36" y="248" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTd-fm-dnj">
+                                <rect key="frame" x="36" y="277" width="303" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="siS-Cc-IKK" secondAttribute="trailing" constant="20" id="3mA-4V-C79"/>
+                            <constraint firstItem="RBr-qa-SyF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4F7-It-D2g"/>
+                            <constraint firstItem="dj0-LM-HZ3" firstAttribute="top" secondItem="siS-Cc-IKK" secondAttribute="bottom" constant="8" id="4N5-BO-cjl"/>
+                            <constraint firstItem="Wc5-t1-3iN" firstAttribute="top" secondItem="RBr-qa-SyF" secondAttribute="bottom" constant="22" id="8mT-eR-5Ou"/>
+                            <constraint firstItem="Nhc-FP-no5" firstAttribute="centerX" secondItem="Wc5-t1-3iN" secondAttribute="centerX" id="Apj-HI-aoN"/>
+                            <constraint firstItem="BTd-fm-dnj" firstAttribute="leading" secondItem="dj0-LM-HZ3" secondAttribute="leading" id="KV6-7G-Xxu"/>
+                            <constraint firstItem="dj0-LM-HZ3" firstAttribute="leading" secondItem="siS-Cc-IKK" secondAttribute="leading" id="N2M-HX-0oh"/>
+                            <constraint firstItem="BTd-fm-dnj" firstAttribute="trailing" secondItem="dj0-LM-HZ3" secondAttribute="trailing" id="PHJ-lj-Ynn"/>
+                            <constraint firstItem="BTd-fm-dnj" firstAttribute="top" secondItem="dj0-LM-HZ3" secondAttribute="bottom" constant="8" id="WSV-rb-Cdu"/>
+                            <constraint firstItem="siS-Cc-IKK" firstAttribute="centerX" secondItem="Nhc-FP-no5" secondAttribute="centerX" id="XQZ-37-TFU"/>
+                            <constraint firstItem="Wc5-t1-3iN" firstAttribute="centerX" secondItem="RBr-qa-SyF" secondAttribute="centerX" id="ZJn-7y-Wmi"/>
+                            <constraint firstItem="siS-Cc-IKK" firstAttribute="top" secondItem="Nhc-FP-no5" secondAttribute="bottom" constant="10" id="c1W-pV-Yyk"/>
+                            <constraint firstItem="RBr-qa-SyF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="c78-rQ-llm"/>
+                            <constraint firstItem="Nhc-FP-no5" firstAttribute="top" secondItem="Wc5-t1-3iN" secondAttribute="bottom" constant="8" id="gTW-kN-YMr"/>
+                            <constraint firstItem="dj0-LM-HZ3" firstAttribute="trailing" secondItem="siS-Cc-IKK" secondAttribute="trailing" id="jIB-gI-XTP"/>
+                            <constraint firstItem="siS-Cc-IKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="vxW-eO-PCs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="121.46739130434784"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miraclePillEmoji" width="90" height="90"/>
+    </resources>
 </document>
