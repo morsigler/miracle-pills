@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					FFE53A3E1EEBFE2E003B3A10 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N2368646X7;
 						ProvisioningStyle = Automatic;
 					};
 					FFE53A521EEBFE2E003B3A10 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2368646X7;
 				INFOPLIST_FILE = "Miracle Pills/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mor.Miracle-Pills";
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N2368646X7;
 				INFOPLIST_FILE = "Miracle Pills/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mor.Miracle-Pills";
@@ -503,6 +506,7 @@
 				FFE53A691EEBFE2E003B3A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFE53A6A1EEBFE2E003B3A10 /* Build configuration list for PBXNativeTarget "Miracle PillsTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +515,7 @@
 				FFE53A6C1EEBFE2E003B3A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFE53A6D1EEBFE2E003B3A10 /* Build configuration list for PBXNativeTarget "Miracle PillsUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				FFE53A6F1EEBFE2E003B3A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
